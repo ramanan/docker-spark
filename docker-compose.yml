@@ -1,7 +1,10 @@
 version: "2.2"
 services:
   master:
-    image: gettyimages/spark
+    image: spark_master
+    build:
+      context: .
+      dockerfile: Dockerfile.master
     command: bin/spark-class org.apache.spark.deploy.master.Master -h master
     hostname: master
     environment:
