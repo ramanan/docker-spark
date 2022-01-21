@@ -34,6 +34,7 @@ RUN apt-get update \
  && apt-get install -y openjdk-8-jre \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
 # HADOOP
 ENV HADOOP_VERSION 3.0.0
