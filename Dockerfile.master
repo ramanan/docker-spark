@@ -1,4 +1,5 @@
 FROM gettyimages/spark
 
-RUN pip install pypandoc
+RUN pip install --upgrade pip==20.3.4
+RUN pip install pypandoc==1.7.1
 RUN pip install pyspark==2.4.6
